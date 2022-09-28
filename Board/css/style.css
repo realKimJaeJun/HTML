@@ -116,6 +116,10 @@ footer > p {
     height: auto;            
     margin: 60px auto;
 }
+#user > .terms > p {
+    float: right;
+    margin-top: 10px;
+}
 #user > .terms > table {
     width: 100%;
     height: auto;
@@ -147,10 +151,7 @@ footer > p {
 #user > .terms > table tr > td > label {float: right;}
 #user > .terms > table tr > td > label > input[type=checkbox] {}
 
-#user > .terms > div {
-    float: right;
-    margin-top: 10px;
-}
+
 
 /* 회원가입 */
 #user > .register {
