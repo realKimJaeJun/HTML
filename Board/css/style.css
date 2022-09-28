@@ -463,7 +463,7 @@ footer > p {
 }
 .btnCancel {}
 .btnNext { background: #e9e9e9; }
-.btnRegister {}
+.btnRegister {background: #e9e9e9;}
 .btnWrite {
     position: absolute;
     right: 0;
