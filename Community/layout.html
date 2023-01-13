@@ -8,11 +8,23 @@
         * {
             margin: 0;
             padding: 0;
+            border: 0;
+            font-size: 100%;
             font: normal 12px '돋움';
         }
 
         ul, ol {list-style: none;}
         a {text-decoration: none; color: #111;}
+
+        .is-blind{
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            margin: -1px;
+            padding: 0;
+            clip: rect(0, 0, 0, 0);
+        }
 
         #wrapper {
             width: 100%;
@@ -78,7 +90,7 @@
         main > .slider {}
 
         main > aside {
-            width: 390px;
+            width: 400px;
             height: 800px;
             border: 1px solid violet;
             box-sizing: border-box;
@@ -105,24 +117,12 @@
             box-sizing: border-box;
         }
 
-        main > .go {}
+        main > .homeGroup {}
 
-        main > .go > article {
+        main > .homeGroup > article {
             padding: 30px 10px;
             box-sizing: border-box;
         }
-
-        main > .go div {
-            float: left;
-            border: 1px solid gray;
-            box-sizing: border-box;
-        }
-
-        main > .go div:nth-child(1) {width: 412px; height: 450px;}
-        main > .go div:nth-child(2) {width: 322px; height: 220px; margin-left: 11px;}
-        main > .go div:nth-child(3) {float: right; width: 322px; height: 220px;}
-        main > .go div:nth-child(4) {width: 322px; height: 220px; margin-left: 11px; margin-top: 10px;}
-        main > .go div:nth-child(5) {float: right; width: 322px; height: 220px; margin-top: 10px;}
 
         main > .oneday {}
 
@@ -217,17 +217,81 @@
                         <li>hit1</li>
                         <li>hit2</li>
                         <li>hit3</li>
-                        <li>hit4</li>
+                        <li>hit4 이하 게시판형 목록</li>
+                        <li>hit5</li>
+                        <li>hit6</li>
+                        <li>hit7</li>
+                        <li>hit8</li>
                     </ul>
                 </article>
             </section>
-            <section class="go">
+            <section class="homeGroup">
+                <h1 class="is-blind">커뮤니티 웹진(웹매거진)</h1>
                 <article>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
+                    <div class="overview">
+                        <div class="today_news">
+                            <ul class="tab_list">
+                                <li>주요뉴스</li>
+                                <li>이슈</li>
+                                <li>기타</li>
+                                <li>더보기</li>
+                            </ul>
+                            <div class="news_content_area news1">
+                                <div class="news_content">
+                                    <ul class="today_news_list">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news_content_area news2">
+                                <div class="news_content">
+                                    <ul class="today_news_list">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news_content_area news3">
+                                <div class="news_content">
+                                    <ul class="today_news_list">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overviewSplit">
+                            <div class="today_news majorTrend">
+                                <div class="tab-title">
+                                    <h2 class="title">주요동향</h2>
+                                    <a href="#">더보기</a>
+                                </div>
+                                <div class="news_content_area news1">
+                                    <div class="opinion-pick"></div>
+                                    <div class="opinion-pick"></div>
+                                    <div class="news_content">
+                                        <ul class="today_news_list">
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
             <section class="oneday">
